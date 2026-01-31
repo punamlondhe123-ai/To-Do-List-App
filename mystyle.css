@@ -1,0 +1,128 @@
+body {
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+.input-row {
+display: flex;
+gap: 10px;
+}
+input[type="text"] {
+    font-family: 'Times new roman';
+flex: 1;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+button {
+padding: 10px 16px;
+border-radius: 8px;
+border: none;
+background: rgb(245, 3, 136);
+color: white;
+cursor: pointer;
+}
+button:hover{
+    background-color: rgb(233, 63, 148);
+}
+
+ul {
+list-style: none;
+padding: 0;
+margin-top: 20px;
+}
+li {
+background: #f9fafb;
+padding: 12px;
+border-radius: 8px;
+margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.task-text.completed {
+text-decoration: line-through;
+color: #777;
+}
+.actions button {
+background: #e5e7eb;
+color: #333;
+margin-left: 5px;
+}
+
+
+
+/* Tablet & Small Desktop (≥ 600px) */
+@media (min-width: 600px) {
+.container {
+max-width: 600px;
+padding: 20px;
+margin-left: 250px;
+
+li {
+flex-direction: row;
+justify-content: space-between;
+}
+.actions button {
+margin-top: 0;
+}
+}
+
+
+/* Desktop (≥ 992px) */
+@media (min-width: 992px) {
+body {
+padding: 40px;
+}
+.container {
+max-width: 700px;
+padding: 28px;
+}
+h2 {
+font-size: 1.8rem;
+}
+li {
+padding: 14px;
+font-size: 1rem;
+}
+input[type="text"] {
+font-size: 1rem;
+padding: 12px;
+}
+button {
+padding: 12px 18px;
+font-size: 1rem;
+}
+}
+
+@media (max-width: 768px) {
+.container {
+padding: 16px;
+}
+li {
+flex-direction: column;
+align-items: flex-start;
+}
+.actions button {
+margin-top: 8px;
+}
+}
+
+
+@media (max-width: 480px) {
+h2 {
+font-size: 1.2rem;
+}
+.input-row {
+flex-direction: column;
+}
+button {
+width: 100%;
+}
+li {
+padding: 10px;
+}
+}
